@@ -1,0 +1,67 @@
+ (use "git rm --cached <file>..." to unstage)
+
+ git add <filename>
+ git status (check staged status)     -s (shorter version)
+ git ls (list of files)
+ git checkout <filename> (restore data from the last commit)
+ git reset --hard (from last commit)
+ git mv <filename> (change file name)
+ git show <filename> (displays commit file info)
+ git diff --staged (displays commited and then staged status)
+ git log (displays commits IDs or hashes)     --oneline (shorter version)
+ git commit -a
+ git config --global
+ git config --global core.abbrev 9 (changes the long of log characters)
+ git diff <commit1> <commit2>
+ git diff --name-only <commit1> <commit2>
+ git diff --word-diff <commit1> <commit2>
+ mkdir (create folder)
+ rmdir (remove or delete folder)
+ cd (change directory)
+ git init (initiliaze git inside the cd selected)
+ git commit --amend (selects last commit)
+ git rebase -i head~ 
+ git rebase --continue
+ git reset --soft <commit number>
+ git reset --soft head~ <commit number>
+ git reset --mixed <commit number>
+
+ git branch <master branch name>
+ git switch (move between branches) git checkout (older)
+ git branch -c (create) git branch -d (delete) git branch -m (move) 
+ git branch -d (delete)
+ git swicth master (moves to master branch)
+ git log --all (shows all commits)	--oneline
+ .gitignore (skip the commit as the file name)
+ .gitignore_global (skip the commits globally) *.txt or any file extension = git config --global core.excludesfile (ruta de la PC "C:/Documents...").
+ git ls-tree -r --name-only <commitcode> (shows files and dirs)
+
+ git log --oneline --all --graph
+ git log --oneline --all --graph --pretty=format:"%C(auto)%h%d %s %C(black)%C(bold)%cr"
+ git config --global alias.log-mejorado "log --oneline --all --graph --pretty=format:'%C(auto)%h%d %s %C(black)%C(bold)%cr'"
+ git log-simple
+ git reflog (Head changes displays) > q > reset --hard <commitnumber>
+ git reset --hard HEAD~1
+
+The default branch has been renamed!
+main is now named master
+
+If you have a local clone, you can update it by running the following commands.
+
+git branch -m main master
+git fetch origin
+git branch -u origin/master master
+git remote set-head origin -a
+
+
+
+2:58:23 - Git Clone
+3:06:05 - Git Push
+3:13:00 - Git Pull & Git Fetch
+3:24:33 - Migrar repositorio local
+3:32:24 - Forks y contribuciones
+3:38:08 - Pull Requests
+3:47:41 - GitHub Issues
+3:52:58 - Buenas Practicas en GIT
+4:01:13 - Proximos pasos
+4:10:04 - Cierre del curso
